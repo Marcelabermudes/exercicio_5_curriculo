@@ -52,3 +52,83 @@ img{
     border-radius: 20px;
     border: 7px solid #8670cf;
 }
+
+address > p{
+    font-style: normal;
+    margin-bottom: 10px;
+    font-size: 30px;
+}
+
+article{
+    padding: 100px;
+}
+
+h2{
+    font-size: 20px;
+    color:#545454;
+    margin-bottom: 20px ;
+    text-align: left;
+    font-weight: bold;
+}
+
+
+/*Explicar a diferença entre o seletor descedente e o seletor de filho direto*/
+ol li {
+    list-style: none;
+    counter-increment: ;
+    margin-bottom:30;
+    position: static;
+    padding: 0px;
+    background-color:;
+    border-radius: ;
+    border-left: ;
+
+}
+
+div{
+   background-color:rgb(247, 244, 244);
+    border-radius: 15px;
+}
+
+ol li ::before{
+    content:normal ;
+    position:fixed ;
+    left: auto ;
+    top: auto;
+    background: red;
+    color: pink ;
+    width: ;
+    height: ;
+    border-radius: 15px ;
+    display:block;
+    align-items: center;
+    justify-content: center ;
+    font-weight:200 ;
+    font-size: medium;
+
+}
+
+section{
+    background-color: white;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 5px;
+    box-shadow: 5px 5px 5px lightgray;
+}
+
+a{
+    color:#667eea;
+    text-decoration:none ;
+    border-bottom: ;
+}
+
+a:hover{
+    color: orangered;
+    border-bottom-style:dashed;
+}
+
+.titulo-formacao:hover{
+    color: palevioletred;
+    transform: scale(1.05);
+    text-shadow: ;
+}
