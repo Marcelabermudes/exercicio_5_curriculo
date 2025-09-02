@@ -1,0 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Climate+Crisis&display=swap');
+
+@font-face {
+    font-family: alien;
+    src: url(/fonte/aliendude.ttf);
+}
+h1{
+     font-family: "Climate Crisis", sans-serif;
+}
+
+p{
+    font-family: alien;
+}

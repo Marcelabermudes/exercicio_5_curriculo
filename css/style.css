@@ -1,0 +1,155 @@
+
+/*Se você definir box-sizing: border-box;um elemento, o preenchimento e a borda serão incluídos na largura e na altura:*/
+*{
+    margin: 0; 
+    box-sizing: border-box;
+    padding: 0;
+}
+
+/*font-family altera a fonte
+ line-height Defina a altura da linha
+ color altera a cor da fonte
+ background-color altera o fundo
+ padding espaçamento entre o elemento e a borda*/
+body{
+    font-family:Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f4f4f4;
+    padding: 20px;
+}
+
+/*Explicar a diferença entre as tags main article e section*/
+.container{
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: white;
+    box-shadow: 0 0 20px;
+    box-shadow: rgba (0,0,0,0.1);
+    border-radius: 5px;
+}
+
+/*Explique cada propriedade com comentários, destacando a função do gradiente, do flex e do gap*/
+#main-header{
+    background:linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    padding: 30px;
+    display:flex;
+    align-items:center;
+    gap: 30px;
+}
+
+#main-header .esquerda{
+    background-color: transparent;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+
+}
+
+/*comentar cada propriedade*/
+#main-header h1{
+    font-size: 30px;
+    margin-bottom: 10px;
+    font-weight: 700;
+}
+
+
+/*Explicar cada propriedade*/
+img{
+    border-radius: 10px;
+    border: 4px solid #8670cf;
+}
+
+address > p{
+    font-style: normal;
+    margin-bottom: 8px;
+    font-size: 14px;
+}
+
+article{
+    padding: 100px;
+}
+
+h2{
+    font-size: 1.8em;
+    color: #444;
+    margin-bottom: 30px;
+    text-align: center;
+    font-weight: 300;
+}
+
+h3{
+    font-size: 20px;
+    color:#545454;
+    margin-bottom: 15px ;
+    text-align: left;
+    font-weight: bold;
+}
+
+
+/*Explicar a diferença entre o seletor descedente e o seletor de filho direto*/
+ol>li {
+    list-style: none;
+    counter-increment: section-counter;
+    margin-bottom: 30px;
+    padding: 25px ;
+    background-color: rgb(238, 238, 238);
+    border-radius: 8px;
+    border-left: 5px solid #4a90e2;
+    position: relative;
+
+}
+
+
+ol>li::before{
+    content: counter(section-counter);
+    position: absolute;
+    left: -15px;
+    top: -15px;
+    background: #667eea;
+    color: white;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    font-weight:bold ;
+    font-size: 1.2em;
+    display:flex;
+    align-items: center;
+    justify-content: center ;
+    
+
+}
+
+   
+section{
+    background-color: white;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 5px;
+    box-shadow: 2px 2px 2px lightgray;
+    font-size: 15px;
+}
+
+
+a{
+    color:#667eea;
+    text-decoration:none ;
+    border-bottom-style:dotted;
+}
+
+a:hover{
+    color: orangered;
+    border-bottom-style:dotted;
+}
+
+
+.titulo{
+    font-size: medium;
+    color: #667eea;
+} 
+
+h3{
+    color:
+}
