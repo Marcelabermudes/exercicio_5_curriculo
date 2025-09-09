@@ -1,154 +1,234 @@
 /*Se você definir box-sizing: border-box;um elemento, o preenchimento e a borda serão incluídos na largura e na altura:*/
-*{
-    margin: 0; 
+* {
+    margin: 0;
+    /* Tira todo o espaço externo padrão dos elementos */
     box-sizing: border-box;
+    /* Faz a largura/altura incluir borda + padding */
     padding: 0;
+    /* Tira todo o espaço interno padrão dos elementos */
 }
 
-/*font-family altera a fonte
- line-height Defina a altura da linha
- color altera a cor da fonte
- background-color altera o fundo
- padding espaçamento entre o elemento e a borda*/
-body{
-    font-family:Arial, Helvetica, sans-serif;
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    /*font-family altera a fonte
+*/
     line-height: 1.6;
+    /* line-height Defina a altura da linha
+*/
     color: #333;
+    /* color altera a cor da fonte
+*/
     background-color: #f4f4f4;
+    /*  background-color altera o fundo
+
+*/
     padding: 20px;
+    /* padding espaçamento entre o elemento e a borda*/
+
 }
 
 /*Explicar a diferença entre as tags main article e section*/
-.container{
+.container {
     max-width: 800px;
+    /*largura máxima 800px*/
     margin: 0 auto;
+    /*centraliza o container na página*/
     background-color: white;
+    /*fundo branco*/
     box-shadow: 0 0 20px;
-    box-shadow: rgba (0,0,0,0.1);
+    /*sombra*/
+    box-shadow: rgba (0, 0, 0, 0.1);
+    /*sombra*/
     border-radius: 5px;
+    /*bordas arredondadas*/
 }
 
-/*Explique cada propriedade com comentários, destacando a função do gradiente, do flex e do gap*/
-#main-header{
-    background:linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+
+#main-header {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    /*gradiente roxo e azul*/
     color: white;
+    /*texto branco*/
     padding: 30px;
-    display:flex;
-    align-items:center;
+    /*espaço interno*/
+    display: flex;
+    /*flexbox*/
+    align-items: center;
+    /*alinha  on itens ao centro na vertical*/
     gap: 30px;
+    /*espaço entre os itens*/
 }
 
-#main-header .esquerda{
+#main-header .esquerda {
     background-color: transparent;
+    /* Fundo transparente */
     display: flex;
+    /* Organiza itens em flex */
     flex-direction: column;
+    /* Coloca os itens em coluna (um embaixo do outro) */
     align-items: flex-start;
+    /* Alinha os itens à esquerda */
 
 
 }
 
 /*comentar cada propriedade*/
-#main-header h1{
+#main-header h1 {
     font-size: 30px;
+    /* Tamanho do texto */
     margin-bottom: 10px;
+    /* Espaço embaixo do título */
     font-weight: 700;
+    /* Negrito  */
 }
 
 
 /*Explicar cada propriedade*/
-img{
+img {
     border-radius: 10px;
+    /* Arredonda os cantos da imagem */
     border: 4px solid #8670cf;
+    /* Borda roxa */
 }
 
-address > p{
+address>p {
     font-style: normal;
+    /* Texto normal (sem itálico) */
     margin-bottom: 8px;
+    /* Espaço abaixo do parágrafo */
     font-size: 14px;
+    /* Tamanho de fonte */
 }
 
-article{
+article {
     padding: 100px;
+    * Espaço interno em todos os lados */
 }
 
-h2{
+
+h2 {
     font-size: 1.8em;
+    /* Tamanho da fonte (1.8x maior que o padrão) */
     color: #444;
+    /* Cinza escuro */
     margin-bottom: 30px;
+    /* Espaço embaixo */
     text-align: center;
+    /* Centraliza o texto */
     font-weight: 300;
+    /* Texto mais fino */
 }
 
-h3{
+h3 {
     font-size: 20px;
-    color:#545454;
-    margin-bottom: 15px ;
+    /* Tamanho de fonte */
+    color: #545454;
+    /* cor inza */
+    margin-bottom: 15px;
+    /* Espaço abaixo */
     text-align: left;
+    /* Alinha à esquerda */
     font-weight: bold;
+    /* Negrito */
 }
 
 
-/*Explicar a diferença entre o seletor descedente e o seletor de filho direto*/
+
 ol>li {
     list-style: none;
+    /* Remove os números padrões da lista */
     counter-increment: section-counter;
+    /* Cria um contador personalizado */
     margin-bottom: 30px;
-    padding: 25px ;
+    /* Espaço entre os itens */
+    padding: 25px;
+    /* Espaço interno */
     background-color: rgb(238, 238, 238);
+    /* Fundo cinza claro */
     border-radius: 8px;
+    /* Bordas arredondadas */
     border-left: 5px solid #4a90e2;
+    /* Faixa azul na lateral esquerda */
     position: relative;
+    /* Permite posicionar elementos dentro com ::before */
 
 }
 
 
-ol>li::before{
+ol>li::before {
     content: counter(section-counter);
+    /* Mostra o número gerado pelo contador */
     position: absolute;
+    /* Posiciona livremente */
     left: -15px;
+    /* Move para a esquerda */
     top: -15px;
+    /* Move para cima */
     background: #667eea;
+    /* Fundo roxo */
     color: white;
+    /* Texto branco */
     width: 35px;
     height: 35px;
+    /* Tamanho do círculo */
     border-radius: 50%;
-    font-weight:bold ;
+    /* Deixa redondo */
+    font-weight: bold;
+    /* Negrito */
     font-size: 1.2em;
-    display:flex;
+    /* Fonte um pouco maior */
+    display: flex;
+    /* Centraliza o número no círculo */
     align-items: center;
-    justify-content: center ;
-    
+    /* Alinha verticalmente */
+    justify-content: center;
+    /* Alinha horizontalmente */
+
 
 }
 
-   
-section{
+
+section {
     background-color: white;
+    /* Fundo branco */
     padding: 10px;
+    /* Espaço interno */
     margin: 10px;
+    /* Espaço externo */
     border-radius: 5px;
+    /* Bordas arredondadas */
     box-shadow: 2px 2px 2px lightgray;
+    /* Sombra suave */
     font-size: 15px;
+    /* Texto levemente menor */
 }
 
 
-a{
-    color:#667eea;
-    text-decoration:none ;
-    border-bottom-style:dotted;
-}
-
-a:hover{
-    color: orangered;
-    border-bottom-style:dotted;
-}
-
-
-.titulo{
-    font-size: medium;
+a {
     color: #667eea;
-} 
-
-h3{
-    color:
+    /* Cor azul/roxa */
+    text-decoration: none;
+    /* Remove o sublinhado padrão */
+    border-bottom-style: dotted;
+    /* Coloca linha pontilhada embaixo */
 }
+
+a:hover {
+    color: orangered;
+    /* Quando passa o mouse, fica laranja */
+    border-bottom-style: dotted;
+    /* Mantém a linha pontilhada */
+}
+
+
+.titulo {
+    font-size: medium;
+    /* Tamanho médio da fonte */
+    color: #667eea;
+    /* Cor azul/roxa */
+}
+
+/*Descendente (espaço)  div p  pega todos os <p> que estão dentro de uma <div>, mesmo que tenha outros elementos no meio.
+
+Filho direto (>)  div > p  pega apenas os <p> que são filhos diretos da <div>.*/
